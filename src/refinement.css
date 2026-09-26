@@ -1,0 +1,44 @@
+/* Independent app identities; artwork always preserves natural proportions. */
+.related-stories{padding:0 20px 25px}.related-stories>button{display:block;width:100%;text-align:left;padding:22px 0;border-bottom:1px solid #e8dfe5}.related-stories small{color:#938893;font-size:12px}.related-stories h3{font-size:18px;margin:8px 0}.related-stories p{font-size:14px;color:#796c7c;line-height:1.8}.related-stories b{font-size:13px;color:#f23b58;display:block;margin-top:12px}.linked-notes{border-left:2px solid #b8dbe8;padding-left:10px;margin-bottom:16px}.linked-notes small{font-size:12px;display:block}
+.food{background:none!important;position:relative;overflow:hidden;isolation:isolate}
+.food>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+.food>span{z-index:1;font-size:11px;background:#ffffffde;color:#48434a;line-height:1.4}
+.phone.content{--accent:#f23b58;--red:#f23b58}
+.phone.delivery{--accent:#008dce;--red:#008dce}
+.phone{border-radius:30px;overflow:hidden;min-width:0}
+.device-column{min-width:0}
+.app-switcher{margin-bottom:18px}
+.app-switcher>small{display:block;margin-bottom:9px;text-align:center;letter-spacing:1px;color:#77717f;font-size:12px}
+.app-switcher>div{display:flex;gap:10px}
+.app-switcher button{position:relative;display:flex;align-items:center;gap:10px;flex:1;text-align:left;border:1px solid #dfdbe0;background:#eeece9;padding:10px;border-radius:15px;min-width:0}
+.app-switcher button.selected{background:white;border-color:#f23b58;box-shadow:0 4px 12px #f23b5810}
+.app-switcher button.delivery.selected{border-color:#008dce;box-shadow:0 4px 12px #008dce10}
+.app-switcher i,.transition-icons i{display:grid;place-items:center;width:40px;height:40px;flex-shrink:0;background:#f23b58;color:white;font-size:29px;font-style:normal;border-radius:12px}
+.app-switcher .delivery i,.transition-icons .delivery{background:#008dce}
+.app-switcher span b{font-size:15px;display:block}.app-switcher span small{font-size:12px;display:block;color:#827887}
+.app-switcher em{font-size:10px;position:absolute;right:8px;top:5px;font-style:normal;color:#958b97}
+.app-header{height:80px;padding:14px 19px!important;background:#fff!important}
+.app-brand{gap:10px;font-size:21px}.app-brand>span{display:grid;place-items:center;background:var(--accent);color:white;width:39px;height:39px;border-radius:12px;font-size:28px}
+.app-brand small{display:block;font-size:11px!important;font-weight:400;color:#827b86}.app-header .round{font-size:20px}
+.delivery .app-header{border-bottom:1px solid #d3edf8;background:#e9f8ff!important}
+.delivery .primary{background:#008dce}.delivery .price{color:#ff6936}
+.delivery .app-nav .active{color:#008dce}.content .app-nav .active{color:#f23b58}
+.app-nav{display:flex;justify-content:space-around;background:#fff;border-top:1px solid #eee7ef;min-height:67px}.app-nav button{flex:1;font-size:25px}.app-nav button span{font-size:13px}
+.app-transition{position:absolute;inset:0;background:#fffefcf5;backdrop-filter:blur(12px);z-index:20;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border-radius:28px}
+.transition-icons{display:flex;align-items:center;gap:22px;margin-bottom:25px}.transition-icons i{width:64px;height:64px;font-size:38px;border-radius:19px;animation:app-pop .7s ease both}.transition-icons i:last-child{animation-delay:.12s}.transition-icons span{color:#a498ae;letter-spacing:4px}.app-transition h2{font-size:22px}.app-transition p{font-size:15px;margin-top:10px;color:#777}.app-transition small{font-size:12px;margin-top:24px;color:#8d8692}
+@keyframes app-pop{from{transform:translateY(14px) scale(.88);opacity:0}to{transform:none;opacity:1}}
+.bridge-origin{display:flex;align-items:center;gap:8px;padding:10px 17px;background:#fff1f4;color:#b8274b;font-size:13px}.bridge-origin button{margin-left:auto;text-decoration:underline}
+.waterfall{gap:9px}.waterfall .food{aspect-ratio:4/5}.waterfall>div:nth-child(2) .post-card:nth-child(odd) .food{aspect-ratio:1}.waterfall>div:first-child .post-card:nth-child(even) .food{aspect-ratio:1}
+.waterfall .byline{font-size:12px}.waterfall .post-copy{padding:10px}.waterfall .post-copy h3{font-size:16px}
+.community-channels{gap:24px}.community-channels>button{min-width:35px}.home-search input{font-size:14px}.topic-tabs{font-size:14px}.topic-tabs button{padding:4px}
+.merchant-card h3{font-size:17px}.merchant-card p{font-size:13px}.merchant-card small{font-size:12px}.merchant-tags{font-size:12px}.category-grid button{font-size:13px}
+.delivery-search input{font-size:14px}.delivery-search>button{background:#008dce;color:white;padding:7px 16px;border-radius:8px;font-size:14px}.delivery-home-top{background:linear-gradient(#e9f8ff,#fff)}
+.feed-end{text-align:center;color:#928892;padding:20px;font-size:12px}.return-link{border-bottom:1px solid #dae9f0;background:#edf8ff!important;color:#087fa9!important;padding:13px!important;font-size:14px!important;border-radius:0!important}
+.prototype-switcher{display:none}.layout-picker{margin:18px 0;font-size:12px;color:#888}.layout-picker button{border:1px solid #ddd;margin:5px;border-radius:7px;padding:4px 9px}.layout-picker button[aria-pressed=true]{color:#5e3b83;border-color:#9979b1}
+.inspector .lab-link{font-size:13px;color:#75538c;border:1px solid #d8cddd;border-radius:8px;padding:8px 12px;width:100%}.story-rail h2{font-size:42px}.story-rail .scenario-nav{margin-top:34px}.story-rail .rail-note{margin-top:30px}
+button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid #8972dd;outline-offset:3px}
+.notice-block{font-size:13px;margin-top:8px;color:#a44549}.empty{font-size:15px}.delivery .sufficient{font-size:13px}
+.screen-body>[hidden]{display:none!important}
+@media(min-width:1151px){.studio{grid-template-columns:minmax(210px,1fr) 460px minmax(225px,.8fr);gap:48px;max-width:1380px}.screen-body{height:640px;max-height:calc(100dvh - 290px);min-height:400px}}
+@media(max-width:700px){.app-switcher{padding:0 12px;margin:8px 0 12px}.app-switcher>small{text-align:left;font-size:11px}.app-switcher button{padding:10px}.phone{border-radius:0;animation:none}.app-transition{position:fixed;inset:0;border-radius:0}.screen-body{min-height:580px;padding-bottom:78px}.story-rail{padding-top:10px}.wordmark small{display:none}.scenario-nav{margin-top:8px!important}.inspector{margin-bottom:90px}.app-header{height:70px}.device-column{width:100%}.waterfall .byline{font-size:11px}.app-nav{position:fixed;bottom:0;z-index:10}.app-switcher em{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.transition-icons i{animation:none}}

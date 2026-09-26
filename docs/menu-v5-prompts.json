@@ -1,0 +1,32 @@
+{
+  "pizza_photo": {
+    "file": "public/assets/pizza.png",
+    "prompt": "Use case: photorealistic-natural\nAsset type: square food card image for a fictional food community and delivery demo\nPrimary request: appetizing margherita pizza with fresh basil on a plate.\nScene/backdrop: muted terracotta table and a simple uncluttered warm cream background.\nSubject: one whole margherita pizza with bubbly charred crust, melted mozzarella, rich tomato sauce and fresh green basil, on an ivory ceramic plate.\nStyle/medium: high-quality editorial food photography, realistic natural textures.\nComposition/framing: square 1:1, three-quarter overhead view, entire pizza and complete plate inside frame with comfortable margins.\nLighting/mood: beautiful natural window daylight, warm inviting appetizing mood.\nConstraints: no text, no logos, no watermark, no people, no hands, no actual restaurant brands.",
+    "mode": "built-in imagegen"
+  },
+  "pizza_pixel": {
+    "file": "public/assets/pixel/pizza.png",
+    "prompt": "Use case: stylized-concept\nAsset type: square food card image for a fictional food community and delivery demo\nPrimary request: crisp pixel art of a margherita pizza with basil on a plate.\nScene/backdrop: playful lilac tabletop with a simple teal background.\nSubject: whole round margherita pizza with golden charred crust, bright tomato sauce, creamy mozzarella and fresh basil on a coral-rimmed ceramic plate.\nStyle/medium: authentic medium-coarse pixel art, deliberately designed pixel clusters on a logical 128–160 pixel square grid enlarged with crisp nearest-neighbor edges; limited harmonious palette.\nComposition/framing: square 1:1, elevated three-quarter view, complete pizza and plate inside frame with comfortable margins, independently composed standalone scene.\nLighting/mood: warm luminous light, lively coral, teal and lilac accents.\nConstraints: no text, no logo, no watermark, no people, no actual restaurant brands. NOT blurry, NOT smooth digital painting, no soft airbrushed gradients.",
+    "mode": "built-in imagegen"
+  },
+  "sushi_photo": {
+    "file": "public/assets/sushi.png",
+    "prompt": "Use case: photorealistic-natural\nAsset type: square food card image for a fictional food community and delivery demo\nPrimary request: appetizing salmon avocado sushi rolls on a ceramic platter.\nScene/backdrop: muted pale teal table and an uncluttered cool blue-gray background.\nSubject: beautifully arranged salmon avocado sushi rolls, visibly fresh orange salmon and green avocado with detailed white rice, on a dark handmade ceramic platter.\nStyle/medium: high-quality editorial food photography, realistic natural textures.\nComposition/framing: square 1:1, three-quarter overhead view, complete platter and all rolls inside frame with comfortable margins.\nLighting/mood: soft natural daylight, fresh inviting appetizing mood.\nConstraints: no text, no logo, no watermark, no people, no hands, no actual restaurant brands.",
+    "mode": "built-in imagegen"
+  },
+  "sushi_pixel": {
+    "file": "public/assets/pixel/sushi.png",
+    "prompt": "Use case: stylized-concept\nAsset type: square food card image for a fictional food community and delivery demo\nPrimary request: crisp pixel art of salmon avocado sushi rolls on a ceramic platter.\nScene/backdrop: soft coral tabletop with a simple lilac background.\nSubject: a neat appetizing cluster of salmon avocado sushi rolls with recognizable orange salmon, green avocado and pearly white rice on a deep teal ceramic platter.\nStyle/medium: authentic medium-coarse pixel art, deliberately designed pixel clusters on a logical 128–160 pixel square grid enlarged with crisp nearest-neighbor edges; limited harmonious palette.\nComposition/framing: square 1:1, elevated three-quarter view, complete platter and all rolls inside frame with comfortable margins, independently composed standalone scene.\nLighting/mood: warm luminous light, lively coral, teal and lilac accents.\nConstraints: no text, no logo, no watermark, no people, no actual restaurant brands. NOT blurry, NOT smooth digital painting, no soft airbrushed gradients.",
+    "mode": "built-in imagegen"
+  },
+  "matcha_photo": {
+    "file": "public/assets/matcha.png",
+    "prompt": "Use case: photorealistic-natural\nAsset type: square food card image for a fictional food community and delivery demo\nPrimary request: an iced strawberry matcha latte in a clear glass.\nScene/backdrop: pale buttery yellow tabletop and uncluttered soft lavender background.\nSubject: one clear straight-sided glass with beautiful distinct layers of strawberry pink puree at the bottom, creamy milk in the middle and rich green matcha above, visible ice cubes and subtle condensation.\nStyle/medium: high-quality editorial beverage photography, realistic natural textures.\nComposition/framing: square 1:1, slightly elevated eye-level close view, complete glass including rim and base inside frame with comfortable margins.\nLighting/mood: bright soft natural daylight, fresh inviting appetizing mood.\nConstraints: no text, no logo, no watermark, no people, no hands, no actual restaurant brands.",
+    "mode": "built-in imagegen"
+  },
+  "matcha_pixel": {
+    "file": "public/assets/pixel/matcha.png",
+    "prompt": "Use case: stylized-concept\nAsset type: square food card image for a fictional food community and delivery demo\nPrimary request: crisp pixel art of an iced strawberry matcha latte in a clear glass.\nScene/backdrop: simple lilac tabletop and warm pale peach background with restrained teal accents.\nSubject: one transparent glass with recognizable layered strawberry-pink bottom, creamy milk middle and vivid matcha-green top, chunky sparkling ice cubes and a few crisp condensation highlights.\nStyle/medium: authentic medium-coarse pixel art, deliberately designed pixel clusters on a logical 128–160 pixel square grid enlarged with crisp nearest-neighbor edges; limited harmonious palette.\nComposition/framing: square 1:1, slightly elevated front view, whole glass including rim and base inside frame with comfortable margins, independently composed standalone scene.\nLighting/mood: warm luminous lighting, lively coral, teal and lilac accents.\nConstraints: no text, no logo, no watermark, no people, no actual restaurant brands. NOT blurry, NOT smooth digital painting, no soft airbrushed gradients.",
+    "mode": "built-in imagegen"
+  }
+}

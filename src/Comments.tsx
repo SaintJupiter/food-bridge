@@ -1,0 +1,14 @@
+import {useState} from 'react';
+import {type CommentItem} from './commentModel';
+export {sampleComments,type CommentItem} from './commentModel';
+export function Comments({items,onChange,delivery=false}:{items:CommentItem[];onChange:(items:CommentItem[])=>void;delivery?:boolean}){
+ const [draft,setDraft]=useState(''),[reply,setReply]=useState<CommentItem|null>(null),[expanded,setExpanded]=useState<string[]>([]);
+ const toggle=(id:string)=>onChange(items.map(c=>c.id===id?{...c,liked:!c.liked,likes:c.likes+(c.liked?-1:1)}:c));
+ const respond=(c:CommentItem)=>{setReply(c);const input=document.getElementById('comment-draft'),box=document.querySelector('.screen-body');if(input&&box)box.scrollTo({top:box.scrollTop+input.getBoundingClientRect().top-box.getBoundingClientRect().top-40,behavior:'auto'});input?.focus({preventScroll:true});};
+ const row=(c:CommentItem)=><div className="comment-row" key={c.id}><span className={'comment-avatar '+(c.own?'own':'')}>{c.author[0]}</span><div><b>{c.author}</b><p>{c.text}</p><div className="comment-meta"><span>{c.own?'刚刚 · 本次体验':'示例 · 虚构用户'}</span><button onClick={()=>respond(c)}>回复</button><button aria-label={'赞同'+c.author+'的评论'} aria-pressed={!!c.liked} onClick={()=>toggle(c.id)}>{c.liked?'♥':'♡'} {c.likes}</button></div></div></div>;
+ return <section className="real-comments" id="comments"><header><h3>{delivery?'菜品评价示例':'全部评论'} <span>{delivery?items.filter(c=>!c.parent).length:items.length}</span></h3><small>虚构示例 · 非真实消费评价</small></header>{delivery&&<div className="review-topics"><span>口味与份量</span><span>包装与配送</span><span>有帮助的反馈</span></div>}
+ <form onSubmit={e=>{e.preventDefault();if(!draft.trim())return;const parent=reply?(reply.parent||reply.id):undefined;onChange([...items,{id:crypto.randomUUID(),author:'原型体验者',text:(reply?'回复 '+reply.author+'：':'')+draft.trim(),parent,likes:0,own:true}]);if(parent)setExpanded(x=>[...x,parent]);setDraft('');setReply(null);}}>
+ {reply&&<div className="reply-target">回复 {reply.author}<button type="button" onClick={()=>setReply(null)}>取消</button></div>}<label className="sr-only" htmlFor="comment-draft">写下评论</label><div className="comment-compose"><input id="comment-draft" maxLength={300} placeholder={delivery?'说说你的体验（模拟）':'有话要说，快来评论'} value={draft} onChange={e=>setDraft(e.target.value)}/><button disabled={!draft.trim()}>发送</button></div><small>仅保留在本次网页会话，刷新清空。</small></form>
+ {items.filter(c=>!c.parent).map(c=>{const replies=items.filter(r=>r.parent===c.id);return <div className="comment-thread" key={c.id}>{row(c)}{!!replies.length&&<div className="comment-replies">{expanded.includes(c.id)&&replies.map(row)}<button className="expand-replies" onClick={()=>setExpanded(x=>x.includes(c.id)?x.filter(id=>id!==c.id):[...x,c.id])}>{expanded.includes(c.id)?'收起回复':'展开 '+replies.length+' 条回复'} ﹀</button></div>}</div>})}
+ </section>;
+}
