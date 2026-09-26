@@ -1,16 +1,17 @@
+import './match-hero.css';
 export function ProductNarrative({onContent,onEvidence,onDemo}:{onContent:()=>void;onEvidence:()=>void;onDemo:()=>void}){
  return <div className="editorial-story">
- <section className="editorial-intro story-intro" aria-labelledby="hero-heading">
-  <div className="edition-label"><span>▦ 种草直达 / 双 App 联动原型</span><b aria-hidden="true">— □ ×</b></div>
-  <div className="intro-editor"><span className="desktop-eyebrow">外卖决策 × 内容种草</span><h1 id="hero-heading">下单前，<em>看清楚。</em><br/>被种草，<em>找得到。</em></h1>
-  <p>外卖里的评价和图片不够看，去社区补充了解；<br/>笔记里看中的菜，直接找到对应门店与菜品。</p></div>
-  <div className="bridge-mini" aria-label="两个模拟应用的双向关联">
-   <button className="mini-dish" onClick={onEvidence}><img src={import.meta.env.BASE_URL+'assets/pixel/pudding.png'} alt="像素布丁示意图"/><span>吃了么 / 选择外卖</span><b>评价少，还想看看</b></button>
-   <span className="mini-connection" aria-hidden="true"><small>同店同款</small><b>一键接上</b></span>
-   <button className="mini-note" onClick={onContent}><img src={import.meta.env.BASE_URL+'assets/pudding.png'} alt="AI 生成布丁示意图，非实拍"/><span>老红书 / 图文讨论</span><b>看完，回到原菜品</b></button>
+ <section className="match-hero" aria-labelledby="hero-heading">
+  <div className="match-chrome"><span>▦ 对上了！ / 双 App 联动原型</span><b aria-hidden="true">— □ ×</b></div>
+  <div className="match-heading"><span className="match-eyebrow">外卖决策 × 内容种草</span><h1 id="hero-heading"><span>想吃的<em>找得到，</em></span><span>想点的<em>看得清。</em></span></h1></div>
+  <div className="match-stage">
+   <img className="match-mascot" src={import.meta.env.BASE_URL+'assets/pixel-route-sign.png'} alt="布丁向导与蓝紫双色路牌像素插画" width="1280" height="1280"/>
+   <button className="match-path match-path-blue" onClick={onEvidence}><span className="match-question">外卖评价少，<br/>图片不够看？</span><span className="match-answer">去社区看同款<span>对上了！</span></span></button>
+   <button className="match-path match-path-purple" onClick={onContent}><span className="match-question">笔记被种草，<br/>却找不到同款？</span><span className="match-answer">找门店，点同款<span>对上了！</span></span></button>
   </div>
-  <div className="intro-bottom"><button onClick={onEvidence}>先体验：外卖 → 社区 ↗</button><button className="intro-secondary" onClick={onDemo}>自由探索双 App</button><span>模拟内容与交易<br/>图片为 AI 生成，非实拍</span></div>
  </section>
+ <aside className="publish-guide" aria-label="模拟发布体验引导"><div><span>不止能浏览，也能亲手发布</span><strong>试发一篇笔记，把同款关联起来。</strong><p>输入笔记 → 确认门店与菜品 → 查看发布结果</p><small>仅在本次演示中生效，不会发布到真实平台。</small></div><button onClick={()=>{window.location.hash='/content/publish';onDemo();}}>体验模拟发布 ↗</button></aside>
+ <div className="match-utility"><button onClick={onDemo}>自由探索双 App ↗</button><span>虚构内容 · AI 图片 · 无真实交易</span></div>
  <section className="route-board" aria-labelledby="route-heading">
   <header><span className="overline">01 / 核心痛点 · 点击体验解决路径</span><h2 id="route-heading">两种信息断层，<br/>两条连接路径。</h2></header>
   <button className="route-ticket delivery-route" onClick={onEvidence}><span className="route-icon">01</span><span><small>优先场景 / 选择外卖时</small><b>评价太少，图片不够看。</b><span className="route-detail">缺少高质量图片和具体口味反馈，难判断是否值得点。关联同款社区图文与讨论，看完仍能回到原菜品。</span><span className="route-stops">外卖菜品 <i>→</i> 社区图文 <i>→</i> 返回决策</span></span><strong>↗</strong></button>
