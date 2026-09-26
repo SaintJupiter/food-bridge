@@ -6,7 +6,7 @@ const brands = ['南巷小馆','木木咖啡','木木咖啡','春日甜品','一
 export const merchants:Merchant[] = brands.map((name,i)=>({id:'m'+i,name,branch:i===2?'徐汇店':'静安店',area:i===2?'徐汇':'静安',aliases:[name.replace('小馆',''),name.replace('咖啡','')]}));
 export const foods = ['椒麻鸡饭','焦糖布丁','冰拿铁','香辣牛肉面','鲜肉小笼包','草莓奶油蛋糕','鸡肉牛油果谷物碗','罗勒玛格丽特披萨','三文鱼牛油果卷','草莓抹茶拿铁'];
 export const foodAssets = ['chicken','pudding','latte','noodles','dumplings','cake','salad','pizza','sushi','matcha'];
-export function foodAssetPath(art:number,mode:'photo'|'pixel'){return 'assets/'+(mode==='pixel'?'pixel/':'')+foodAssets[art]+'.png';}
+export function foodAssetPath(art:number,mode:'photo'|'pixel'){return 'assets/'+(mode==='pixel'?'pixel/':'')+foodAssets[art]+'.webp';}
 const menus = [[0,1,4],[2,1,5],[2,5,1],[1,5,2],[3,4,0],[0,4,6],[6,0,1],[3,4,6],[2,5,1],[6,4,0],[0,3,4],[5,1,2]];
 const baseDishes:Dish[] = merchants.flatMap((m,i)=>menus[i].map((art,j)=>({id:'d'+(i*3+j),merchantId:m.id,name:foods[art],price:[32,18,24,28,22,29,35][art],art,photos:j===1?1:4,reviews:j===1?2:12})));
 export const dishes:Dish[] = [...baseDishes,...[
