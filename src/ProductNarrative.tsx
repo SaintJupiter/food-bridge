@@ -6,8 +6,8 @@ export function ProductNarrative({onContent,onEvidence,onDemo}:{onContent:()=>vo
   <div className="match-heading"><span className="match-eyebrow">外卖决策 × 内容种草</span><h1 id="hero-heading"><span>想吃的<em>找得到，</em></span><span>想点的<em>看得清。</em></span></h1></div>
   <div className="match-stage">
    <img className="match-mascot" loading="eager" fetchPriority="high" decoding="async" src={import.meta.env.BASE_URL+'assets/pixel-route-sign.webp'} alt="布丁向导与蓝紫双色路牌像素插画" width="1280" height="1280"/>
-   <button className="match-path match-path-blue" onClick={onEvidence}><span className="match-question">外卖评价少，<br/>图片不够看？</span><span className="match-answer">去社区看同款<span>对上了！</span></span></button>
-   <button className="match-path match-path-purple" onClick={onContent}><span className="match-question">笔记被种草，<br/>却找不到同款？</span><span className="match-answer">找门店，点同款<span>对上了！</span></span></button>
+   <button className="match-path match-path-blue" onClick={onEvidence}><span className="match-question">外卖评价少，<br/>图片不够看？</span><span className="match-answer">去社区看同款</span></button>
+   <button className="match-path match-path-purple" onClick={onContent}><span className="match-question">笔记被种草，<br/>却找不到同款？</span><span className="match-answer">找门店，点同款</span></button>
   </div>
  </section>
  <aside className="publish-guide" aria-label="模拟发布体验引导"><div><span>不止能浏览，也能亲手发布</span><strong>试发一篇笔记，把同款关联起来。</strong><p>输入笔记 → 确认门店与菜品 → 查看发布结果</p><small>仅在本次演示中生效，不会发布到真实平台。</small></div><button onClick={()=>{window.location.hash='/content/publish';onDemo();}}>体验模拟发布 ↗</button></aside>
